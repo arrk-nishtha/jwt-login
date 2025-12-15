@@ -1,76 +1,132 @@
-# jwt-login
-JWT Login App
+# JWT Login App
 
-A simple Node.js + Express application demonstrating JWT (JSON Web Token) based authentication.
-This project is intentionally kept simple and slightly insecure so it can be used for learning, testing, and security practice (Burp Suite / JWT attacks).
+A simple **Node.js + Express** application demonstrating **JWT (JSON Web Token) based authentication**.  
+This project is intentionally kept simple and slightly insecure so it can be used for **learning, testing, and security practice (Burp Suite / JWT attacks)**.
 
-🚀 Features
-Login page with basic HTML + CSS
-Username & password authentication
-JWT generation on successful login
-Protected dashboard route
-Token verification middleware
-Beginner‑friendly code structure
+---
 
-🛠️ Tech Stack
-Node.js
-Express.js
-jsonwebtoken (JWT)
-body-parser
+## 🚀 Features
 
-📂 Project Structure
+- Login page with basic HTML + CSS
+- Username & password authentication
+- JWT generation on successful login
+- Protected dashboard route
+- Token verification middleware
+- Beginner‑friendly code structure
+
+---
+
+## 🛠️ Tech Stack
+
+- **Node.js**
+- **Express.js**
+- **jsonwebtoken (JWT)**
+- **body-parser**
+
+---
+
+## 📂 Project Structure
+
+```
 jwt-login/
 │── app.js          # Main application file
 │── package.json    # Project dependencies
 │── README.md       # Project documentation
-▶️ How to Run the Project
-1️⃣ Clone the repository
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/ark-nishtha/jwt-login.git
 cd jwt-login
-2️⃣ Install dependencies
+```
+
+### 2️⃣ Install dependencies
+
+```bash
 npm install
-3️⃣ Start the server
-node login.js
-4️⃣ Open in browser
+```
+
+### 3️⃣ Start the server
+
+```bash
+node app.js
+```
+
+### 4️⃣ Open in browser
+
+```
 http://localhost:3000/login
-🔐 Demo Login Credentials
+```
+
+---
+
+## 🔐 Demo Login Credentials
+
+```
 Username: admin
 Password: admin123
+```
 
-🔑 How JWT Works in This App
-User submits login form
-Server verifies credentials
-JWT is generated using a secret key
-Token is sent to the client
-Token is required to access /dashboard
-Server verifies token before granting access
+---
 
-⚠️ Security Notice
-This project is NOT production‑ready.
+## 🔑 How JWT Works in This App
+
+1. User submits login form
+2. Server verifies credentials
+3. JWT is generated using a secret key
+4. Token is sent to the client
+5. Token is required to access `/dashboard`
+6. Server verifies token before granting access
+
+---
+
+## ⚠️ Security Notice
+
+This project is **NOT production‑ready**.
+
 Intentional weaknesses (for learning purposes):
-JWT secret is hardcoded
-Token is passed via URL query string
-No HTTPS
-No database
+- JWT secret is hardcoded
+- Token is passed via URL query string
+- No HTTPS
+- No database
 
-⚠️ Do NOT use this code as‑is in real applications.
+⚠️ Do **NOT** use this code as‑is in real applications.
 
-🧪 Learning Use Cases
+---
+
+## 🧪 Learning Use Cases
+
 This app is useful for practicing:
-JWT structure (Header / Payload / Signature)
-Token tampering
-Expired token testing
-Weak secret brute‑forcing
-Burp Suite JWT attacks
 
-📌 Future Improvements
+- JWT structure (Header / Payload / Signature)
+- Token tampering
+- Expired token testing
+- Weak secret brute‑forcing
+- Burp Suite JWT attacks
 
-Use Authorization: Bearer <token> header
-Store users in a database
-Use environment variables for secrets
-Add logout functionality
-Add role‑based authorization
+---
 
-👩‍💻 Author
-Nishtha
+## 📌 Future Improvements
+
+- Use `Authorization: Bearer <token>` header
+- Store users in a database
+- Use environment variables for secrets
+- Add logout functionality
+- Add role‑based authorization
+
+---
+
+## 👩‍💻 Author
+
+**Nishtha**  
 GitHub: https://github.com/ark-nishtha
+
+---
+
+⭐ If you find this project helpful, feel free to star the repository!
+
