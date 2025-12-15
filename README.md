@@ -29,7 +29,7 @@ This project is intentionally kept simple and slightly insecure so it can be use
 
 ```
 jwt-login/
-│── app.js          # Main application file
+│── login.js          # Main application file
 │── package.json    # Project dependencies
 │── README.md       # Project documentation
 ```
@@ -54,7 +54,7 @@ npm install
 ### 3️⃣ Start the server
 
 ```bash
-node app.js
+node login.js
 ```
 
 ### 4️⃣ Open in browser
@@ -128,5 +128,4 @@ GitHub: https://github.com/ark-nishtha
 
 ---
 
-⭐ If you find this project helpful, feel free to star the repository!
 
